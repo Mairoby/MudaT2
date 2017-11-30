@@ -27,13 +27,13 @@ public class MainActivity extends AppCompatActivity {
            public void onClick(View view) {
              //  Toast mensaje = Toast.makeText(MainActivity.this,  "Hola Mundo", Toast.LENGTH_LONG);w
              //  mensaje.show();
-               Intent visualizar = new Intent(MainActivity.this, Visualizar.class);
+               Intent RegistroUsuario = new Intent(MainActivity.this,ResgistroUsuario.class);
                //Bundle parametros = new Bundle();12
 
                //parametros.putString("nombre", txtNombre.getText().toString());
                //
-               visualizar.putExtra("nombre", txtNombre.getText().toString());
-               startActivity(visualizar);
+              // RegistroUsuario.putExtra("nombre", txtNombre.getText().toString());
+               startActivity(RegistroUsuario);
 
            }
        });
