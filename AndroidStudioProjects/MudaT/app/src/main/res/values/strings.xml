@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MudaT</string>
+    <string name="title_activity_lista_usuario">ListaUsuario</string>
 </resources>

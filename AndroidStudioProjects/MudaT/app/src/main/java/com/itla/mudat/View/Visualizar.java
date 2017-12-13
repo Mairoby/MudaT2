@@ -1,8 +1,10 @@
-package com.itla.mudat;
+package com.itla.mudat.View;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.itla.mudat.R;
 
 public class Visualizar extends AppCompatActivity {
     private TextView nombre;

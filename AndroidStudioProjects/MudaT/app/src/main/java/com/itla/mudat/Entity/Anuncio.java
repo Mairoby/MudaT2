@@ -7,13 +7,16 @@ import java.util.Date;
  */
 
 public class Anuncio {
-    public static byte[] getGet() {
-        return get;
-    }
 
-    public static void setGet(byte[] get) {
-        Anuncio.get = get;
-    }
+    private int id;
+    private Categoria categoria;
+    private Usuario usuario;
+    private Date fecha;
+    private String condición;
+    private Double precio;
+    private String titulo;
+    private String ubicacion;
+   private String detalle;
 
     public int getId() {
         return id;
@@ -48,11 +51,11 @@ public class Anuncio {
     }
 
     public String getCondición() {
-        return Condición;
+        return condición;
     }
 
     public void setCondición(String condición) {
-        Condición = condición;
+        this.condición = condición;
     }
 
     public Double getPrecio() {
@@ -64,57 +67,42 @@ public class Anuncio {
     }
 
     public String getTitulo() {
-        return Titulo;
+        return titulo;
     }
 
-    public void setTitulo(String titulo) {
-        Titulo = titulo;
+    public  void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
     public String getUbicacion() {
         return ubicacion;
     }
 
-    public void setUbicacion(String ubicacion) {
+    public  void setUbicacion(String ubicacion) {
         this.ubicacion = ubicacion;
     }
 
     public String getDetalle() {
-        return Detalle;
+        return detalle;
     }
 
     public void setDetalle(String detalle) {
-        Detalle = detalle;
+        this.detalle = detalle;
     }
 
-    public static byte[] get;
-    private int id;
-    private  Categoria categoria;
-    private Usuario usuario;
-    private Date fecha;
-    private String Condición;
-    private Double precio;
-    private String Titulo;
-    private String ubicacion;
-   private String Detalle;
-
-    public int getId_Categoria() {
-        return Id_Categoria;
+    public void setCategoria(String s) {
     }
 
-    public void setId_Categoria(int id_Categoria) {
-        Id_Categoria = id_Categoria;
+    public void setUsuario(String s) {
     }
 
-    public int getId_Usuario() {
-        return Id_Usuario;
+    public void setfecha(Date fecha) {
+        this.fecha = fecha;
     }
 
-    public void setId_Usuario(int id_Usuario) {
-        Id_Usuario = id_Usuario;
+    public void setCondicion(String s) {
     }
 
-    private int Id_Categoria;
-   private int Id_Usuario;
-
+    public void setPrecio(String s) {
+    }
 }

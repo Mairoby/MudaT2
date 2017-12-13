@@ -1,11 +1,15 @@
 package com.itla.mudat.Entity;
 
+import java.io.Serializable;
+
 /**
  * Created by wagne on 18/11/2017.
  */
 
-public class Usuario {
+public class Usuario implements Serializable{
+
   private int  Id;
+
 	private String nombre;
 	private Usuario tipodeusuario;
 	private String identificacion;

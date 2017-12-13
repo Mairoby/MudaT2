@@ -9,15 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".View.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Visualizar" />
-        <activity android:name=".ResgistroUsuario"></activity>
+        <activity android:name=".View.Visualizar" />
+        <activity android:name=".View.ResgistroUsuario" />
+        <activity
+            android:name=".View.ResgistroUsuario$ListaUsuario"
+            android:label="@string/title_activity_lista_usuario"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".View.ListaUsuario" />
+        <activity android:name=".View.Anuncios" />
+        <activity android:name=".View.RegistroAnuncio"></activity>
     </application>
 
 </manifest>

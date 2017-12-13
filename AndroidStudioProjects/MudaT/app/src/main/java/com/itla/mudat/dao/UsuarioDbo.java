@@ -24,18 +24,25 @@ public class UsuarioDbo {
     }
 
     public void crear(Usuario usuario){
-        SQLiteDatabase db = con.getWritableDatabase();
+
 
         ContentValues cv = new ContentValues();
-        cv.put("id",usuario.getId());
+       // cv.put("id",usuario.getId());
         cv.put( "nombre", usuario.getNombre());
         cv.put("clave", usuario.getClave());
         cv.put("email", usuario.getEmail());
-       // cv.put("estatus", usuario.getEstatus());
+      //  cv.put("estatus", true);
         cv.put("telefono", usuario.getTelefono());
-        cv.put("tipo_usuario", TipodeUsuario.Cliente.toString());
+       // cv.put("tipo_usuario", TipodeUsuario.Cliente.toString());
 
-        db.insert("usuario", null,cv);
+        SQLiteDatabase db = con.getWritableDatabase();
+
+        if (usuario.getId()== 0) {
+            Long id = db.insert("usuario", null, cv);
+
+        }else{
+            db.update("usuario",cv,"id = "+usuario.getId(),null);
+    }
 
         db.close();
 

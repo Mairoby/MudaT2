@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.itla.mudat.View.RegistroAnuncio">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textRegistroAnuncio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registro Anuncio"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textcategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Categoria" />
+
+            <EditText
+                android:id="@+id/editTextcategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textusuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usuario" />
+
+            <EditText
+                android:id="@+id/editTextusuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textfecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha" />
+
+            <EditText
+                android:id="@+id/editTextfecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textcondicion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Condicion" />
+
+            <EditText
+                android:id="@+id/editTextcondicion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textprecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Precio" />
+
+            <EditText
+                android:id="@+id/editTextprecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/texttitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Titulo" />
+
+            <EditText
+                android:id="@+id/editTexttitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textubicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ubicacion" />
+
+            <EditText
+                android:id="@+id/editTextubicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textdetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Detalle" />
+
+            <EditText
+                android:id="@+id/editTextdetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btonGuardar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Guardar" />
+
+                <Button
+                    android:id="@+id/btonDescartar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descartar" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>
+

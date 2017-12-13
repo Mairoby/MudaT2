@@ -6,4 +6,6 @@ package com.itla.mudat.Entity;
 
 public enum TipodeUsuario {
     Publicador, Cliente;
+
+
 }
